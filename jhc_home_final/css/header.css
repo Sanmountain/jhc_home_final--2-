@@ -1,0 +1,132 @@
+@charset "utf-8";
+.moBtn {display: none;}
+.mo_icon {display: none;}
+.wrap {width: 100%; height: 100%;}
+header {position: fixed; top: 0; left: 0; display: flex; width: 100%; height: 80px; justify-content: space-between; align-items: center; border-bottom: 1px solid #ccc; padding: 0 8.5%; background-color: #fff; z-index: 10;}
+header h1 {width: 228px; height: 40px;}
+header h1 img {width: 100%; height: 100%;}
+
+header nav {display: flex; width: 56%; height: 100%;}
+header nav ul {display: flex; width: 75%; height: 100%; line-height:80px; font-size: 1.8rem;}
+header nav ul li {position: relative; width: 25%; height: 100%; text-align: center;}
+header nav ul li::before {content: ""; position: absolute; top: 40px; left: 50%; transform: translateX(-50%); display: block; width: 0%; height: 10px; background-color: rgba(12, 76, 175, 0.1); transition: .3s;}
+header nav ul li:hover::before, header nav ul li:focus::before {width: 60%;}
+header nav ul li .sub_gnb {display: none; position: absolute; top: 80px; width: 100%; height: auto; z-index: 10;}
+header nav ul li .sub_gnb li {width: 100%; height: 35px; line-height: 35px; font-size: 1.6rem;}
+header nav ul li .sub_gnb li::before {content: ""; position: absolute; top: 20px; left: 50%; transform: translateX(-50%); display: block; width: 0%; height: 5px; background-color: rgba(12, 76, 175, 0.15); transition: .3s;}
+header nav ul li .sub_gnb li:hover::before, header nav ul li .sub_gnb li:focus::before {width: 60%;}
+header nav ul li .sub_gnb li .sub_gnb_solution {display: block; width: 60%; margin: 0 auto;}
+header nav ul li .sub_gnb li .sub_gnb_solution li {
+    text-align: left;
+    font-size: 1.3rem;
+    color: #555555;
+}
+header nav ul li .sub_gnb li .sub_gnb_solution li::before { background-color: transparent;}
+header nav ul li .sub_gnb li .sub_gnb_solution li:hover {color: #052c69;}
+header nav .gotoshop {width: 26%;}
+header nav .gotoshop a {display: flex; width: 100%; height: 80%; justify-content: flex-end; flex-direction: column;}
+header nav .gotoshop a .goto_icon {width: 53%; margin: 0 auto;}
+header nav .gotoshop a .goto_text {width: 100%; text-align: center; font-size: 1.3rem; color: #052c69; margin-top: 5px; padding-left: 5px;}
+header nav .gotoshop a:hover .goto_text {font-weight: bold;}
+
+.sub_bg {position: absolute; display: none; top: 80px; left: 0; width:100%; height: 220px; background-color:#fff; border-bottom: #ccc; box-shadow: 0 15px 10px 0px rgba(149, 149, 149, 0.1);}
+
+
+@media all and (max-width: 1200px) {
+header {padding: 0 5%;}
+header h1 {width: 200px; height: 35px;}
+header nav {width: 60%; height: 100%;}
+header nav ul {font-size: 1.7rem;}
+header nav ul li:hover::before, header nav ul li:focus::before {width: 70%;}
+header nav ul li .sub_gnb li {font-size: 1.5rem;}
+header nav ul li .sub_gnb li:hover::before, header nav ul li .sub_gnb li:focus::before {width: 75%;}
+    
+header nav .gotoshop a .goto_icon {width: 60%; margin: 0 auto;}
+}
+@media all and (max-width: 1000px) {
+header {padding: 0 4%;}
+header nav .gotoshop a {height: 78%;}
+header nav .gotoshop a .goto_icon {width: 70%;}
+header nav .gotoshop a .goto_text {font-size: 1.2rem;}
+header nav ul li .sub_gnb li .sub_gnb_solution {display: block; width: 72%; margin: 0 auto;}
+header nav ul li .sub_gnb li .sub_gnb_solution li {
+    text-align: left;
+    font-size: 1.2rem;
+    color: #555555;
+}
+}
+@media all and (max-width: 768px) {
+.moBtn {display: block; width: 36px; height: auto; transition: .3s;}
+.moBtn.active {width: 30px;}
+header {height: 60px; padding: 0 5%;}
+header nav {
+    position: fixed;
+    flex-direction: column;
+    left: -100%;
+    top: 60px;
+    width: 100%;
+    background-color: #052c69;
+    padding: 10%;
+    z-index: 99;
+    transition: .3s;
+}
+header nav ul {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+header nav ul li {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+header nav ul li::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 0%;
+    transform: translateX(0%);
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .3s;
+}
+header nav ul li:hover::before,  header nav ul li:focus::before  {width: 100%; height: 100%;
+}
+header nav ul li:hover {color: #052c69; font-weight: bold;}
+header nav ul li .sub_gnb {display: none; position: static;}
+header nav ul li .sub_gnb li {height: 20px; line-height: 20px; font-weight: normal; color: #052c69; border: none; border: none;}
+header nav ul li .sub_gnb li::before {position: static; display: none;}
+header nav ul li .sub_gnb li:hover a, header nav ul li .sub_gnb li:focus a {font-weight: bolder;}
+
+header nav ul li .sub_gnb li .sub_gnb_solution {display: block; width: 75%; margin: 0 auto;}
+header nav ul li .sub_gnb li .sub_gnb_solution li {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+header nav .gotoshop {width: 100%; margin-top: 30px;}
+header nav .gotoshop a {height: 100%;}
+header nav .gotoshop a .goto_icon img:first-child {display: none;}
+header nav .gotoshop a .mo_icon {display: block; width: 45%; margin: 0 auto;}
+header nav .gotoshop a .goto_text {color: #fff; font-size: 1.2rem; margin-top: 10px;}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,221 @@
+@charset "utf-8";
+.m_title {display: none;}
+article {width: 83%; height: auto; margin: 130px auto 120px;}
+.article_title {width: 100%; height: auto; border-bottom: 2px solid #052c69;}
+.article_title h2 {line-height: 2; font-size: 2.6rem;}
+form {width: 100%; height: auto; margin-top: 50px; padding: 0 15px;}
+.form_wrap {width: 100%; height: auto; margin-bottom: 100px;}
+.form_wrap h3 {font-size: 2rem; margin-bottom: 30px;}
+.form_box {display: flex; width: 100%; height: auto; margin-bottom: 20px;}
+.form_box label {width: 25%; line-height: 43px; font-size: 1.6rem;}
+.form_box label span {color: #d90000; font-weight: bold;}
+.form_box .box_inner {position: relative; width: 75%; height: 45px;}
+.form_box .box_inner input {width: 100%; height: 45px; line-height: 43px; font-size: 1.4rem; padding-left: 15px; border: 1px solid #aeaeae;}
+.form_box .box_inner select {appearance: none; -webkit-appearance: none; -moz-appearance: none; width: 100%; height: 45px; line-height: 43px; font-size: 1.4rem; padding-left: 15px; border: 1px solid #aeaeae;}
+.form_box .box_inner .arrow img {transition: .3s;}
+.form_box select:focus, .form_box textarea:focus, .form_box .box_inner input:focus {outline: none; border: 1px solid #052c69;}
+.form_box select:focus + .arrow img {transform: rotate(180deg);}
+.form_box .box_inner .arrow {position: absolute; top: 18px; right: 3%; width: 13px;}
+.form_box .con_inner {width: 75%; height: 400px;}
+.form_box  textarea {display: block; width:100%; height: 400px; font-size: 1.4rem; border: 1px solid #aeaeae;  padding: 15px;}
+.form_box .box_title {width: 25%; line-height: 43px; font-size: 1.6rem;}
+.form_box .long_title {line-height: 2;}
+.agree_box {margin-top: 40px;}
+.form_box .box_inner input[type="file"] {visibility: hidden;}
+.form_box .box_inner #fileName, .form_box .box_inner #file_name
+{position: absolute; left: 31%; width: 69%; height:45px; line-height: 43px; white-space: nowrap; border: 1px solid #bababa; color: #777; font-size: 1.4rem; padding:0 10px; text-overflow: ellipsis; overflow: hidden;}
+.box_inner label {position: absolute; width: 30%; height: 45px; border: 1px solid #aeaeae; font-size: 1.4rem; text-align: center;}
+.box_inner .file_txt {line-height: 2; font-size: 1.2rem;}
+.form_box .email_inner {position: relative; display: flex; width: 75%;}
+.form_box .email_inner input {width: 20%; height: 45px; line-height: 45px; font-size: 1.4rem; padding-left: 10px; border: 1px solid #aeaeae;}
+.form_box .email_inner > span {width: 3%; height: 45px; line-height: 45px; font-size: 1.5rem; text-align: center;}
+.form_box .email_inner select {appearance: none; -webkit-appearance: none; -moz-appearance: none; width: 55%; height: 45px; line-height: 45px; font-size: 1.4rem; padding-left: 10px; border: 1px solid #aeaeae; margin-left: 2%;}
+.form_box .email_inner .arrow {position: absolute; top: 18px; right: 3%; width: 13px;}
+.form_box .email_inner .arrow img {transition: .3s;}
+.form_box .form_inner {width: 75%; height: auto; background-color: #f4f4f4; padding: 30px;}
+.form_box .box_title > i {color: #e20000;}
+.form_box .form_inner p {font-size: 1.3rem; line-height: 1.5; margin-bottom: 15px;}
+.form_box .form_inner .highlight {color: #c10000;}
+.agree {position: relative; width: 380px; height: auto; text-align: center; margin: 30px auto;}
+.agree label {display: block; width: auto; height: 100%; cursor: pointer;}
+.agree label::before {content: ''; display: block; float: left; width: 20px; height: 20px; border: 1px solid #052c69;}
+.agree label input, .agree label > span:first-child {display: none;}
+.agree label > span:last-child {display: block; width: 100%; line-height: 1.5; font-size: 1.6rem;}
+.agree input[type="checkbox"]:checked + span {
+    position: absolute; top: 5px; left: 4px; width: 14px; height: 12px; background: url(../img/check.svg) no-repeat center/cover;
+}
+.agree.agree_check {margin-top: 60px;}
+.btn_wrap {display: flex; width: 450px; height: 45px; margin: 0 auto; justify-content: space-between;}
+.btn_wrap input {width: 200px; height: 45px; line-height: 43px; font-size: 1.6rem; color: #052c69; border: 1px solid #052c69;}
+.btn_wrap input[type="submit"] {color: #fff; background-color: #052c69;}
+
+
+/********** 제품문의 내용 **********/
+.form_con_wrap {border: 2px solid #052c69;}
+.form_con_col {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #052c69;
+}
+.form_con_col .form_con {
+    display: flex;
+    width: 50%;
+    line-height: 40px;
+    font-size: 1.6rem;
+}
+.form_con_col .form_con .con_title {
+    width: 30%;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+.form_con_col .form_con .con_inner {width: 70%; padding-left: 10px;}
+.form_con_wrap .form_con .con_title span {color: #c10000;}
+.form_con_wrap > .form_con {
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #052c69;
+}
+.form_con_wrap > .form_con:last-child {border-bottom: none;}
+.form_con_wrap > .form_con .con_title {
+    width: 15%;
+    line-height: 40px;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+.form_con_wrap > .form_con .con_inner {
+    width: 85%;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.form_con_wrap > .form_con .con_inner a:hover {
+    text-decoration: underline;
+}
+.form_con_wrap > .form_con .con_inner.question {
+    line-height: 1.5;
+    padding: 10px;
+}
+.back_to_list {
+    display: block;
+    width: 180px;
+    height: 45px;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #052c69;
+    border-radius: 10px;
+    margin: 60px auto 0;
+}
+
+@media all and (max-width: 1200px) {
+article {width: 92%;}
+.article_title h2 {font-size: 2.4rem;}
+form {width: 100%; height: auto; margin-top: 50px; padding: 0 15px;}
+.form_box .email_inner input {width: 30%; height: 45px; line-height: 45px; font-size: 1.4rem; padding-left: 10px;}
+.form_box .email_inner > span {width: 3.5%; height: 45px; line-height: 45px; font-size: 1.4rem;}
+.form_box .email_inner select {width: 36.5%; height: 45px; line-height: 45px; font-size: 1.4rem; padding-left: 10px; margin-left: 1.5%;}
+.form_box .form_inner {width: 75%; padding: 20px;}
+.form_box .form_inner p {font-size: 1.3rem; line-height: 1.5; margin-bottom: 10px;}
+
+}
+
+@media all and (max-width: 768px) {
+article {width: 98%; margin: 100px auto 120px;}
+.form_wrap {margin-bottom: 80px;}
+.form_wrap h3 {font-size: 1.8rem; margin-bottom: 30px;}
+.form_box {margin-bottom: 20px;}
+.form_box label {width: 25%; line-height: 38px; font-size: 1.4rem;}
+.form_box .box_inner {width: 75%; height: 40px;}
+.form_box .box_inner input {height: 40px; line-height: 38px; font-size: 1.4rem; padding-left: 10px;}
+.form_box .box_inner select {height: 40px; line-height: 38px; font-size: 1.4rem; padding-left: 10px;}
+.form_box .box_inner .arrow {top: 16px; right: 5%; width: 13px;}
+.form_box .con_inner {width: 75%; height: 350px;}
+.form_box  textarea {width:100%; height: 350px; font-size: 1.4rem; padding: 15px;}
+.form_box .box_title {width: 25%; line-height: 38px; font-size: 1.4rem;}
+.form_box .long_title {line-height: 2;}
+.agree_box {margin-top: 40px;}
+.form_box .box_inner #fileName, .form_box .box_inner #file_name
+{left: 31%; width: 69%; height:40px; line-height: 38px;  font-size: 1.4rem; padding: 0 10px;}
+.box_inner label {width: 30%; height: 40px; font-size: 1.4rem;}
+.box_inner .file_txt {line-height: 2; font-size: 1.2rem;}
+.form_box .email_inner {width: 75%;}
+.form_box .email_inner input {width: 30%; height: 40px; line-height: 38px; font-size: 1.4rem; padding-left: 10px;}
+.form_box .email_inner > span {width: 4%; height: 40px; line-height: 40px; font-size: 1.3rem;}
+.form_box .email_inner select {width: 36%; height: 40px; line-height: 38px; font-size: 1.4rem; padding-left: 10px; margin-left: 1%;}
+.form_box .email_inner .arrow {top: 16px; right: 3%; width: 13px;}
+.form_box .form_inner {width: 75%; padding: 20px;}
+.form_box .form_inner p {font-size: 1.3rem; line-height: 1.5; margin-bottom: 10px;}
+.agree {width: 330px; margin: 30px auto;}
+.agree label::before {width: 17px; height: 17px;}
+.agree label > span:last-child {line-height: 1.5; font-size: 1.4rem;}
+.agree input[type="checkbox"]:checked + span {top: 3px; left: 3px; width: 13px; height: 11px;}
+.btn_wrap {width: 340px; height: 40px;}
+.btn_wrap input {width: 160px; height: 40px; line-height: 38px; font-size: 1.4rem;}
+
+
+/********** 제품문의 내용 **********/
+.form_con_col .form_con {font-size: 1.4rem;}
+.form_con_wrap > .form_con {font-size: 1.4rem;}
+.form_con_col .form_con .con_title {
+    width: 32%;
+    padding-left: 5px;
+}
+.form_con_col .form_con .con_inner {width: 68%; padding-left: 5px;}
+.form_con_wrap > .form_con .con_title {
+    width: 16%;
+    line-height: 40px;
+    padding-left: 5px;
+}
+.form_con_wrap > .form_con .con_inner {
+    width: 84%;
+    line-height: 40px;
+    padding-left: 5px;
+}
+}
+
+@media all and (max-width: 499px) {
+article {width: 98%; margin: 100px auto 120px;}
+.form_wrap {margin-bottom: 80px;}
+.form_wrap h3 {font-size: 1.6rem; margin-bottom: 20px;}
+.form_box {display: block; margin-bottom: 15px;}
+.form_box label {width: 100%; line-height: 2; font-size: 1.4rem;}
+.form_box .box_inner {width: 100%;}
+.form_box .box_inner input {font-size: 1.4rem; padding-left: 10px;}
+.form_box .box_inner select {height: 40px; line-height: 38px; font-size: 1.4rem; padding-left: 10px;}
+.form_box .box_inner .arrow {top: 16px; right: 5%; width: 13px;}
+.form_box .con_inner {width: 100%; height: 300px;}
+.form_box  textarea {height: 300px; font-size: 1.4rem; padding: 10px;}
+.form_box .box_title {width: 100%; line-height: 2; font-size: 1.4rem;}
+.form_box .long_title {display: none;}
+.m_title {display: block;}
+.agree_box {margin-top: 35px;}
+.box_inner label {width: 30%; line-height: 38px; font-size: 1.4rem;}
+.box_inner .file_txt {line-height: 2; font-size: 1.1rem;}
+.form_box .email_inner {width: 100%;}
+.form_box .form_inner {width: 100%; padding: 15px;}
+.form_box .form_inner p {font-size: 1.2rem;}
+.agree.agree_check {margin-top: 40px;}
+.btn_wrap {width: 320px;}
+.btn_wrap input {width: 150px;}
+
+
+
+/********** 제품문의 내용 **********/
+.form_con_col .form_con {font-size: 1.1rem;}
+.form_con_col .form_con .con_title {padding-left: 3px;}
+.form_con_col .form_con .con_inner {padding-left: 3px;}
+.form_con_wrap > .form_con {font-size: 1.1rem;}
+.form_con_wrap > .form_con .con_title {padding-left: 3px;}
+.form_con_wrap > .form_con .con_inner {padding-left: 3px;}
+.form_con_wrap > .form_con .con_inner.question {padding: 5px;}
+.back_to_list {
+    width: 140px;
+    height: 40px;
+    font-size: 1.3rem;
+    margin: 50px auto 0;
+}
+}
+
+
+

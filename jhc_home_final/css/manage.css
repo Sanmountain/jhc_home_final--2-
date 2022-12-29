@@ -1,0 +1,485 @@
+@charset "utf-8";
+.visual {width: 100%; height: 250px; background: url(../img/submenu_bg/company.jpg) no-repeat center/cover; margin-top: 80px; padding-top: 60px;}
+.visual .visual_img {margin: 0 auto;}
+.visual .visual_img > img {margin: 0 auto;}
+.visual h2 {line-height: 80px; font-size: 4rem; color: #fff; text-align: center;}
+article {width: 83%; height: auto; margin: 100px auto 120px;}
+.list_filter {display: flex; align-items:center; justify-content: space-between;}
+.list_filter h3 {font-size: 2.2rem; color: #052c69;}
+.list_filter > button {
+    width: 85px;
+    height: 35px;
+    font-size: 1.3rem;
+    color: #052c69;
+    border: 1px solid #052c69;
+    border-radius: 10px;
+    transition: .3s;
+}
+.list_filter > button:hover {background-color: #052c69; color: #fff;}
+.list_wrap {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-top: 1px solid #052c69;
+}
+.list_wrap .list_inner {
+    width: 100%;
+    height: auto;
+}
+.list_wrap .list_con {
+    display: flex;
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+}
+.list_wrap .list_con:last-of-type {border-bottom: 1px solid #052c69;}
+.list_wrap .list_con .list_name {
+    width: 160px;
+    height: 100%;
+    line-height: 53px;
+    font-size: 1.4rem;
+    padding-left: 20px;
+    color: #fff;
+    background-color: #325893;
+}
+.list_wrap .list_con .list_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 150px);
+    height: 100%;
+    padding: 0 20px;
+}
+.list_wrap .list_con .list_box .select_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    height: 35px;
+    
+}
+.list_con .list_box .select_wrap .select_section {
+    position: relative;
+    width: 57%;
+    height: 100%;
+    line-height: 33px;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+}
+.list_con .list_box .select_wrap .select_section.month {
+    width: 40%;
+}
+.list_con .list_box .select_wrap .select_section select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+.list_con .list_box .select_wrap .select_section .arrow {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    width: 12px;
+    height: auto;
+    transition: .3s;
+}
+.select_section select:focus {outline: 1px solid #052c69;}
+.select_section select:hover + .arrow {transform: rotate(180deg);}
+.list_wrap .list_con .list_box  .select_wrap  .select_month {
+    width: 100px;
+}
+.list_wrap .list_con .list_box .input_section {
+    display:flex;
+    justify-content: space-between;
+    width: 67%;
+    height: 35px;
+}
+.list_wrap .list_con .list_box .input_section label {
+    width: 83%;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+.list_wrap .list_con .list_box .input_section label input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    padding-left: 10px;
+}
+.list_box .input_section label input::placeholder {font-weight: lighter; color: #959595;}
+.list_box .input_section label input:focus {border: 1px solid #052c69;}
+
+.list_wrap .list_con .list_box .input_section button {
+    width: 15%;
+    height: 100%;
+    font-size: 1.3rem;
+    color: #d33a39;/*#e84745;*/
+    border: 1px solid #d33a39;
+    border-radius: 10px;
+}
+.list_wrap .list_con .list_box .input_section button:hover {
+    background-color: #d33a39;
+    color: #fff;
+}
+form .add_btn_wrap {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+}
+form .add_btn_wrap button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 1.4rem;
+    color: #052c69;
+    border: 1px solid #052c69;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.add_btn_wrap button span {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    background: url(../img/icon/pencil.svg) no-repeat center/cover;
+}
+.add_btn_wrap button:nth-child(2) span {
+    width: 13px;
+    height: 13px;
+    background: url(../img/icon/delete.svg) no-repeat center/cover;
+}
+.add_btn_wrap button:nth-child(3) span {
+    width: 17px;
+    height: 12px;
+    background: url(../img/icon/list_blue.svg) no-repeat center/cover;
+}
+.add_btn_wrap button:hover {color: #fff; background-color: #052c69;}
+.add_btn_wrap button:hover span::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icon/pencil_white.svg);
+}
+.add_btn_wrap button:nth-child(2):hover span::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-image: url(../img/icon/close_white.svg);
+}
+.add_btn_wrap button:nth-child(3):hover span::before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 12px;
+    background-image: url(../img/icon/list_white.svg);
+}
+
+
+/********* 제휴제안 등록 리스트 *********/
+.filter {
+    position: relative;
+    width: 200px;
+    height: 35px;
+    border: 1px solid #052c69;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.filter select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+.filter select:focus {outline: none;}
+.filter select:focus + .arrow {transform: rotate(180deg);}
+.filter .arrow {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 13px;
+    height: auto;
+    transition: .3s;
+}
+.filter .arrow img {width: 100%; height: 100%;}
+.list_title {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #052c69;
+    align-items: center;
+    text-align: center;
+}
+.list_title .date {width: 18%;}
+.list_title .sort {width: 26%;}
+.list_title .company {width: 26%;}
+.list_title .name {width: 12%;}
+.list_title .contact {width: 18%;}
+.list {color: #242424; background-color: #fff;}
+.list_inner:nth-of-type(2n + 1) .list {background-color: rgba(5, 44, 105, 0.05);}
+.list_inner:last-of-type {border-bottom: 1px solid #052c69;}
+.list_btn_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+}
+.btn_pre {
+    display: flex;
+    justify-content: space-around;
+    width: 70px;
+    height: 100%;
+}
+.btn_pre button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    font-size: 3rem;
+}
+.btn_pre button span{
+    color: #052c69;
+    width: 100%;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+}
+.page {
+    display: flex;
+    width: auto;
+    height: 100%;
+    margin: 0 2%;
+}
+.page li {
+    width: 30px;
+    height: 30px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.page li:hover, .page li:focus {font-weight: bold;}
+
+
+/********* 제품문의 리스트 *********/
+.filter.product_filter select {padding-left: 10px;}
+.list_title .product_date {width: 18%;}
+.list_title .product_sort {width: 22%;}
+.list_title .product_title {width: 40%;}
+.list_title .product_company {width: 20%;}
+
+
+@media all and (max-width: 1200px) {
+article {width: 85%; margin: 80px auto 100px;}
+article h3 {font-size: 2rem;}
+    
+
+
+/********* 제휴제안 등록 리스트 *********/
+.list_title {
+    height: 45px;
+    font-size: 1.4rem;
+}
+}
+
+@media all and (max-width: 768px) {
+.visual {margin-top: 60px;}
+article {width: 85%; margin: 60px auto 100px;}
+.list_filter h3 {font-size: 2rem;}
+.list_wrap .list_con {height: 95px;}
+.list_wrap .list_con .list_name {
+    width: 120px;
+    line-height: 53px;
+    font-size: 1.4rem;
+    padding-left: 20px;
+}
+.list_wrap .list_con .list_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100% - 120px);
+}
+.list_wrap .list_con .list_box .select_wrap {
+    width: 70%;
+    margin-bottom: 5px
+}
+.list_wrap .list_con .list_box .input_section {
+    width: 100%;
+    height: 35px;
+}
+.list_wrap .list_con .list_box .input_section label {width: 80%;}
+.list_wrap .list_con .list_box .input_section label input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    padding-left: 10px;
+}
+.list_wrap .list_con .list_box .input_section button {
+    width: 18%;
+    font-size: 1.3rem;
+}
+form .add_btn_wrap {
+    height: 35px;
+    margin-top: 30px;
+}
+form .add_btn_wrap button {
+    width: 80px;
+    height: 35px;
+    line-height: 33px;
+    font-size: 1.4rem;
+}
+
+    
+
+
+/********* 제휴제안 등록 리스트 *********/
+.filter {
+    width: 160px;
+    height: 30px;
+    padding: 0 5px;
+}
+.filter select {font-size: 1.2rem;}
+.filter .arrow {
+    top: 11px;
+    right: 8px;
+    width: 10px;
+}
+.list_title {
+    height: 40px;
+    font-size: 1.2rem;
+}
+.list_btn_wrap {
+    width: 100%;
+    height: 25px;
+    margin-top: 25px;
+}
+.btn_pre {
+    width: 60px;
+    height: 100%;
+}
+.btn_pre button {
+    width: 25px;
+    height: 25px;
+    font-size: 2.6rem;
+}
+.btn_pre button span{line-height: 17px;}
+.page li {
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
+    font-size: 1.4rem;
+}
+}
+
+@media all and (max-width: 499px) {
+.visual {height: 220px; padding-top: 50px;}
+.visual h2 {line-height: 80px; font-size: 3rem;}
+article {width: 88%; margin: 40px auto 100px;}
+.list_filter h3 {font-size: 1.8rem;}
+.list_filter > button {
+    width: 80px;
+    height: 33px;
+    font-size: 1.2rem;
+}
+.list_wrap {margin-top: 10px;}
+.list_wrap .list_con {height: 95px;}
+.list_wrap .list_con .list_name {
+    width: 80px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+}
+.list_wrap .list_con .list_box {
+    width: calc(100% - 80px);
+    padding: 0 10px;
+}
+.list_con .list_box .select_wrap .select_section {font-size: 1.2rem;}
+.list_con .list_box .select_wrap .select_section select {padding-left: 5px;}
+.list_con .list_box .select_wrap .select_section .arrow {
+    top: 14px;
+    width: 11px;
+}
+.list_wrap .list_con .list_box .input_section {
+    width: 100%;
+    height: 35px;
+}
+.list_wrap .list_con .list_box .input_section label {width: 78%;}
+.list_wrap .list_con .list_box .input_section label input {
+    font-size: 1.2rem;
+    padding-left: 5px;
+}
+.list_wrap .list_con .list_box .input_section button {
+    width: 20%;
+    font-size: 1.1rem;
+}
+form .add_btn_wrap {
+    height: 33px;
+    margin-top: 20px;
+}
+form .add_btn_wrap button {
+    width: 70px;
+    height: 33px;
+    line-height: 31px;
+    font-size: 1.2rem;
+}
+.add_btn_wrap button span {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+}
+.add_btn_wrap button:nth-child(2) span {
+    width: 11px;
+    height: 11px;
+}
+.add_btn_wrap button:nth-child(3) span {
+    width: 14px;
+    height: 9px;
+}
+.add_btn_wrap button:hover span::before {
+    width: 12px;
+    height: 12px;
+}
+.add_btn_wrap button:nth-child(2):hover span::before {
+    width: 11px;
+    height: 11px;
+}
+.add_btn_wrap button:nth-child(3):hover span::before {
+    width: 14px;
+    height: 9px;
+}
+
+    
+
+
+/********* 제휴제안 등록 리스트 *********/
+.filter {
+    width: 140px;
+    height: 30px;
+    padding: 0 3px;
+}
+.filter select {font-size: 1.1rem;}
+.filter .arrow {
+    top: 11px;
+    right: 5px;
+    width: 9px;
+}
+.list_title {
+    height: 40px;
+    font-size: 1.1rem;
+}
+}

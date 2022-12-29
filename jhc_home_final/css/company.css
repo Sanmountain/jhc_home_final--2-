@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+.visual {width: 100%; height: 250px; background: url(../img/submenu_bg/company.jpg) no-repeat center/cover; margin-top: 80px; padding-top: 60px;}
+.visual .visual_img {margin: 0 auto;}
+.visual .visual_img > img {margin: 0 auto;}
+.visual h2 {line-height: 80px; font-size: 4rem; color: #fff; text-align: center;}
+.visual_menu {width: 100%; height: 60px; line-height: 60px; border-bottom: 1px solid #ccc;}
+.visual_menu ul {display: flex; width: 83%; height: 100%; margin: 0 auto; justify-content: space-between;}
+.visual_menu ul li {width: 20%; height: 50%; line-height: 30px; font-size: 1.6rem; color: 959595; text-align: center; border-right: 1px solid #ccc; align-self: center;}
+.visual_menu ul li:last-child {border-right: none;}
+.visual_menu ul li:hover, .visual_menu ul li:focus {font-weight: bold;}
+
+article {width: 83%; height: auto; margin: 100px auto 120px;}
+article h3 {line-height: 1; font-size: 3rem; color: #052c69; padding-left: 50px;}
+article .container {margin-top: 20px; padding-top: 60px; border-top: 2px solid #052c69;}
+article .container .inner {width: 80%; height: auto; margin: 0 auto;}
+article .container .inner b {line-height: 2; font-size: 2rem;}
+article .container .inner p {line-height: 2; font-size: 1.8rem; margin: 50px 0 100px;}
+article .container .inner span {display: inline-block; width: 100%; font-size: 1.8rem; text-align: right;}
+article .container .inner .answer {margin: 5px 0 50px;}
+article .container .inner .answer > i {display: inline-block; width: 85px;}
+article .container .con_btn {width: 200px; height: 45px; line-height: 45px; font-size: 1.6rem; color: #ffffff; background-color: #242424; text-align: center; margin: 80px auto;}
+
+
+/******* 사업연혁 *******/
+article > .manage_btn {position: relative; width: 90px; height: 35px; line-height: 33px; font-size: 1.3rem; border: 1px solid #052c69; border-radius: 5px; float: right; margin-top: -30px; margin-right: 10px; z-index: 1;}
+article > .manage_btn::before {content: ""; position: absolute; display: block; width: 0%; height: 100%; background-color: #052c69; z-index: -1; transition: .3s;}
+article > .manage_btn:hover::before {width: 100%;}
+article > .manage_btn:hover {color: #ffffff;}
+article .container .history_inner {width: 80%;}
+article .container .inner .sub_title {display: block; text-align: center; margin-bottom: 60px;}
+article .container .inner .history_con {display: flex; width: 100%; height: auto; margin-bottom: 50px;}
+article .container .inner .history_con .history_left {width: 120px; height: auto;}
+article .container .inner .history_con .history_left p {width: 120px; height: 120px; line-height: 120px; font-size: 2rem; font-weight: bold; color: #fff; text-align: center; border-radius: 50%; background-color: #052c69; box-shadow: 3px 5px 10px 0 rgba(5, 44, 105, 0.3); margin: 0;}
+article .container .inner .history_con .history_middle {width: calc(35% - 120px); height: 60px; border-bottom: 2px solid #052c69;}
+article .container .inner .history_con .history_right {width: 65%;}
+article .container .inner .history_con .history_right .right_top {width: 100%; height: 60px; font-size: 2rem; font-weight: bold; color: #052c69; border-bottom: 2px solid #959595; padding-top: 25px; margin-bottom: 20px;}
+article .container .inner .history_con .history_right .right_down > p {width: 100%; height: auto; line-height: 1.5; font-size: 1.6rem; margin: 0; margin-top: 8px;}
+article .container .inner .history_con .history_right .right_down > p > span {width: auto; color: #052c69; font-weight: bold; margin-right: 20px;}
+
+/******* 제휴제안 *******/
+.container .proposal > b {
+    color: #052C69;
+/*    text-shadow: -1px 0 #052c69, 0 1px #052c69, 1px 0 #052c69, 0px -1px #052c69;*/
+}
+
+/******* 오시는길 *******/
+.container .location_img p {width: 80%; height: auto; margin: 0 auto 60px;}
+.container .location_img img {width: 100%; height: 100%;}
+.container .location_info {width: 80%; height: auto; margin: 0 auto 50px; padding-bottom: 20px; border-bottom: 2px solid #ccc;}
+.container .location_info:last-of-type {border-bottom: none;}
+.container .info_inner {display: flex; margin-bottom: 20px; align-items: center;}
+.icon_img, .icon_image {position: relative; width: 75px; height: 75px; background-color: #dfe6e9; border-radius: 50%;}
+.icon_img img {width:55%; margin: 0 auto; margin-top: 16px;}
+.icon_image img {width: 100%; height: 100%;}
+.location_info > b {display: block;font-size: 2.2rem; color: #052c69; margin-bottom: 20px;}
+.container .info_inner .info_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-left: 30px;
+}
+.container .info_inner .info_text  em {
+    color: #052c69;
+}
+.container .info_inner .info_text > i {
+    line-height: 2;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.container .info_inner .info_text .color_dot::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #28ade1;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.container .info_inner .info_text .color_dot:last-child::before {
+    background-color: #29c530;
+}
+
+
+
+/******* CI *******/
+.inner > p > img {
+    width: 565px;
+    margin: 150px auto 200px;
+}
+
+
+@media all and (max-width: 1200px) {
+.visual_menu ul {width: 85%;}
+.visual_menu ul li {font-size: 1.4rem;}
+article {width: 85%; margin: 80px auto 100px;}
+article h3 {line-height: 1; font-size: 2.8rem; padding-left: 0px;}
+article .container {margin-top: 15px; padding-top: 50px;}
+article .container .inner {width: 100%;}
+article .container .inner b {font-size: 1.8rem;}
+article .container .inner p {font-size: 1.6rem; margin: 40px 0 80px;}
+article .container .inner span {font-size: 1.6rem;}
+article .container .con_btn {margin: 80px auto 100px;}
+
+    
+/******* 사업연혁 *******/
+article .container .history_inner {width: 100%;}
+
+
+/******* 오시는길 *******/
+.container .location_img p {width: 100%; height: auto; margin: 0 auto 60px;}
+.container .location_info {width: 100%;}
+.icon_img, .icon_image {position: relative; width: 70px; height: 70px;}
+.icon_img img {width: 55%; margin: 0 auto; margin-top: 15px;}
+    
+/******* CI *******/
+.inner > p > img {
+    width: 452px;
+    margin: 150px auto 200px;
+}
+}
+
+@media all and (max-width : 768px) {
+.visual {margin-top: 60px;}
+.visual_menu {height: 50px; line-height: 50px;}
+.visual_menu ul {width: 85%;}
+.visual_menu ul li {line-height: 26px; font-size: 1.4rem;}
+article {width: 85%; margin: 60px auto 100px;}
+article h3 {font-size: 2.2rem;}
+article .container {margin-top: 15px; padding-top: 30px;}
+article .container .inner b {font-size: 1.6rem;}
+article .container .inner p {font-size: 1.4rem; margin: 30px 0 50px;}
+article .container .inner span {font-size: 1.4rem;}
+article .container .inner .answer {line-height:1.5; margin: 5px 0 40px;}
+article .container .inner .answer > i {width: 75px;}
+article .container .con_btn {margin: 80px auto 100px;}
+
+/******* 사업연혁 *******/
+article .container .inner .sub_title {margin-bottom: 30px;}
+article .container .inner .history_con {margin-bottom: 40px;}
+article .container .inner .history_con .history_left {width: 100px;}
+article .container .inner .history_con .history_left p {width: 100px; height: 100px; line-height: 100px; font-size: 1.8rem;}
+article .container .inner .history_con .history_middle {width: calc(30% - 100px); height: 50px;}
+article .container .inner .history_con .history_right {width: 70%;}
+article .container .inner .history_con .history_right .right_top {height: 50px; font-size: 1.8rem; padding-top: 18px; margin-bottom: 10px;}
+article .container .inner .history_con .history_right .right_down > p {font-size: 1.4rem;}
+article .container .inner .history_con .history_right .right_down > p > span {font-size: 1.4rem; font-weight: bold; margin-right: 10px;}
+
+
+/******* 오시는길 *******/
+.container .location_img p {width: 100%; height: auto; margin: 0 auto 50px;}
+.icon_img, .icon_image {width: 65px; height: 65px;}
+.icon_img img {width: 55%; margin: 0 auto; margin-top: 15px;}
+.location_info > b {font-size: 2rem; margin-bottom: 15px;}
+.container .info_inner .info_text {font-size: 1.6rem;}
+.container .info_inner .info_text > i {font-size: 1.8rem;}
+.container .info_inner .info_text .color_dot::before {
+    width: 14px;
+    height: 14px;
+}
+    
+ 
+/******* CI *******/
+.inner > p > img {
+    width: 339px;
+    margin: 120px auto 150px;
+}
+}
+
+@media all and (max-width: 499px) {
+.visual {height: 220px; padding-top: 50px;}
+.visual_img > img {width: 180px;}
+.visual h2 {line-height: 80px; font-size: 2.8rem;}
+.visual_menu {height: 50px; line-height: 50px;}
+.visual_menu ul {width: 99%;}
+.visual_menu ul li {line-height: 26px; font-size: 1.3rem;}
+article {width: 88%; margin: 40px auto 100px;}
+article h3 {font-size: 1.8rem;}
+article .container {margin-top: 15px; padding-top: 25px;}
+article .container .inner b {font-size: 1.4rem;}
+article .container .inner p {font-size: 1.2rem; margin: 20px 0 50px;}
+article .container .inner span {font-size: 1.2rem;}
+article .container .inner .answer {line-height:1.5; margin: 5px 0 30px;}
+article .container .inner .answer > i {width: 60px;}
+article .container .con_btn {width: 180px; height: 40px; line-height: 40px; font-size: 1.3rem; margin: 60px auto 100px;}
+    
+
+/******* 사업연혁 *******/
+article > .manage_btn {position: relative; width: 70px; height: 30px; line-height: 28px; font-size: 1.2rem; margin-top: -23px; margin-right: 0px;}
+article .container .inner .sub_title {margin: 10px 0 40px;}
+article .container .inner .history_con {display: block; width: 100%; height: auto; margin-bottom: 50px;}
+article .container .inner .history_con .history_left {width: 100%;}
+article .container .inner .history_con .history_left p {margin: 0 auto;}
+article .container .inner .history_con .history_middle {display: none;}
+article .container .inner .history_con .history_right {width: 100%;}
+article .container .inner .history_con .history_right .right_top {height: 40px; font-size: 1.8rem; padding-top: 10px; margin-bottom: 10px;}
+article .container .inner .history_con .history_right .right_down > p {font-size: 1.4rem; padding: 0 10px; margin-top: 10px;}
+article .container .inner .history_con .history_right .right_down > p > span {font-size: 1.4rem; font-weight: bold; margin-right: 10px;}
+    
+    
+    
+/******* 오시는길 *******/
+.container .location_img p {width: 100%; height: auto; margin: 0 auto 30px;}
+.icon_img, .icon_image {width: 55px; height: 55px;}
+.icon_img img {margin-top: 12px;}
+.container .location_info {width: 100%; height: auto; margin: 0 auto 20px; padding-bottom: 0px; border-bottom: 1px solid #ccc;}
+.location_info > b {font-size: 1.8rem; margin-bottom: 10px;}
+.container .info_inner .info_text {
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+.container .info_inner .info_text > i {font-size: 1.6rem;}
+.container .info_inner .info_text .color_dot::before {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+    
+/******* CI *******/
+.inner > p > img {
+    width: 226px;
+    margin: 80px auto 100px;
+}
+}
